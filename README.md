@@ -1,2 +1,9 @@
 # Assignment_9
- Assignment_9 jQuery
+ #### Description
+ This Assignment covers following concepts of jQuery:
+ - jQuery Installation
+ - Selectors
+ - Multiple selectors
+ - Commands
+ - Handling diffrent events
+ - Handling multiple events
