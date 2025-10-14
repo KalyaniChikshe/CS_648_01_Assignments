@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.backtothetop.min.js"></script>
+	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+			$( document ).tooltip();
+			$(".quicknav").sticky({topSpacing:0});
+			$('#scroll-top').goTop({
+			// scroll speed in milliseconds
+			scrollSpeed: 1000,
+
+			// fade in/out speed in milliseconds
+			fadeInSpeed: 1000,
+			fadeOutSpeed: 500
+			});
+		});
+	</script>
+	<style rel="stylesheet">
+		.quicknav > ul{
+			display: block;
+		}
+		#scroll-top {
+			display: none;
+			font-size: 30px;
+			position: fixed;
+			bottom: 50px;
+			right: 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			width: 45px;
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="Welcome to Vecta Corp.">Home</a></li>
+				<li><a href="aboutus.html" title="Learn about our purpose, team and career opportunities">About Us</a></li>
+				<li><a href="solutions.html" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.">Solutions</a></li>
+				<li><a href="support.html" title="Our knowledgeable community can resolve your questions.">Support</a></li>
+				<li><a href="contactus.html" title="To contact us, please leave a note here.">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="eleven columns">
+			<h4>Our Solutions</h4>
+			<div id="vprospect">
+				<p>vProspect 2.0</p>
+
+				<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience. vProspect can help your business:
+				
+				Define your target audience and competition.
+				
+				Research your competition and your target audience's behavior, needs, technical know-how level, etc.
+				
+				Establish a conceptual and visual identity that corresponds to the defined direction of the company.
+				
+				Ensure consistency across all media.
+				
+				Establish corporate guidelines for cohesiveness of any future developments.
+				
+				Define and/or re-defining your service and/or product offerings.
+				
+				Define expansion plans and strategies.
+				
+				Implement Search Engine Optimization of all Online materials.</p>				
+		</div>
+		<div id="scroll-top" class="iconfont icon-cc-top"></div>
+		<div id="vconvert">
+				<p>vConvert 2.0</p>
+
+				<p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level. vConvert can help your business:
+				
+				Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.
+				
+				Cause the desired emotional response in a user to facilitate conversion to a client.
+				
+				Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.
+				
+				Research your target audience's behavior, needs, technical know-how and level, etc.
+				
+				Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
+				
+				Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.</p>
+		</div>
+		<div id="scroll-top" class="iconfont icon-cc-top"></div>
+		<div id="vretain">
+				<p>vRetain 1.0</p>
+
+				<p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues. vRetain can help your business:
+				
+				Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect & customer tracking and interaction within the company.
+				
+				Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
+				
+				Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.</p>
+				
+				
+		</div>
+		
+		<div id="scroll-top" class="iconfont icon-cc-top"></div>
+		<p>&nbsp;</p>
+		</section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Quick Nav</h4>
+
+			<!-- INSERT ACCORDION HERE -->
+			<div class="quicknav">
+				<ul id="responsive-menu">
+				  <li><a href="#vprospect">vProspect 2.0</a></li>
+				  <li><a href="#vconvert">vConvert 2.0</a></li>
+				  <li><a href="#vretain">vRetain 1.0</a></li>
+				</ul>
+			</div>
+			
+		</section>
+	</main>
+</body>
+</html>
