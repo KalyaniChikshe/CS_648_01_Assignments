@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 07 - Part 5</title>
+    <script src="js/dom-practice.js"></script>
+    <script>
+        window.document.addEventListener("DOMContentLoaded", init);
+        function init() {
+            "use strict";
+                var myButton_4 = window.document.getElementById("myButton_4")
+                myButton_4.addEventListener("click", function() {
+                window.alert("I have been clicked.")
+            });
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <p>Old school HTML attribute method to attach a click event handler to the button</p>
+        <button onclick="displayMessage()">Display Message</button>
+    </section>
+
+    <section>
+        <p>DOM Element method to associate a function with the onclick event of the button</p>
+        <button id="myButton_1">Display Message</button>
+    </section>
+
+    <section>
+        <p>Event listener to the button and listens for the click event</p>
+        <button id="myButton_2">Display Message</button>
+    </section>
+
+    <section>
+        <p>Event Listener through Callback Function</p>
+        <button id="myButton_3">Show Message</button>
+    </section>
+    
+    <section>
+        <p>Event Listener in Script</p>
+        <button id="myButton_4">Show Message</button>
+    </section>
+</body>
+</html>
