@@ -1,0 +1,31 @@
+@mixin boxProperties($width, $height, $margin: 0) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+}
+@mixin headerProperties($color, $font-weight, $font-size, $line-height: 0) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin backgroundImage($image, $position, $origin: 0) {
+    background: url($image) $position $origin;
+}
+
+@mixin largeScreenMediaQuery {
+    @media (max-width: 968px) {
+        @content;
+    }
+}
+@mixin mediumScreenMediaQuery {
+    @media (max-width: 750px) {
+        @content;
+    } 
+}
+@mixin smallScreenMediaQuery {
+    @media (max-width: 450px) {
+        @content;
+    }      
+}
